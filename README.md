@@ -1,206 +1,320 @@
-[Google Maps Email Extractor](https://apify.com/scrapio/google-maps-email-extractor?fpr=data)
+[Google Maps Email Extractor](https://apify.com/dltik/google-maps-email-extractor?fpr=data)
 
-## **Social Media** Email Scraper 📱
+# Google Maps Email Extractor — Business Leads with Emails & WhatsApp
 
-Google Maps Email Extractor allows users to **extract** essential **contact** information from business listings on Google Maps. The tool focuses on gathering verified email addresses, ensuring high-quality **data** for outreach campaigns.
+Extract business emails, phones, **WhatsApp availability**, social profiles, and ratings from Google Maps. Enter a keyword + location, get a complete lead list with **verified emails** and **lead scoring** — all in one run.
 
-In addition to **emails**, users can collect other relevant details such as business names, phone numbers, and addresses. This Google Maps **data** **extract**ion software is designed to provide comprehensive **data** for lead generation and market analysis.
+No separate email finder needed. No chaining multiple actors. One input, one output, done.
 
-By using this tool, users can streamline their efforts in finding and connecting with businesses on Google Maps. The **extract**ed **data** is organized and easy to access, making it ideal for various professional applications.
+> **No proxy needed.** This actor works without residential proxies — even on the free Apify plan. Built-in anti-detection bypasses Google's bot protection natively.
 
-## Support and feedback
+ 
 
-- **Bug reports**: Open a ticket in the repository Issues section
-- **Custom features**: Contact our enterprise support team
-*Email: [hello.scrapio@gmail.com](mailto:hello.scrapio@gmail.com)*
+> ⭐ **Found this useful?** Click the **Bookmark** button at the top of [this page](https://apify.com/dltik/google-maps-email-extractor) — it helps the scraper stay visible to others who need it. Takes 1 click. No signup beyond your existing Apify account.
 
-## Extractable Data Table 📊
+---
 
-| Data Type | Description |
-| --- | --- |
-| Business Name | Extract the official name of the business as listed on Google Maps. |
-| Email Address | Gather verified email addresses for direct communication with businesses. |
-| Phone Number | Retrieve contact phone numbers associated with Google Maps listings. |
-| Physical Address | Extract the full address of businesses for geographic analysis or outreach. |
-| Website URL | Collect links to official websites for further information or contact options. |
-| Business Category | Identify the industry or category of the business for targeted lead generation. |
-| Ratings and Reviews | Access customer ratings and reviews to evaluate business credibility. |
-| Operating Hours | Extract business operating hours to plan communication effectively. |
+## Why this actor?
 
-## Key Features of **Social Media** Email Scraper
+| Feature | This actor | lukaskrivka ($5/1K) | compass ($4/1K) |
+| --- | --- | --- | --- |
+| Google Maps data | Yes | Yes | Yes |
+| Email extraction | Yes (6 techniques) | Yes | No |
+| **MX email validation** | **Yes** | No | No |
+| **WhatsApp check** | **Yes** | No | No |
+| Social profiles | 6 platforms | Limited | No |
+| Lead scoring | A/B/C/D/F | No | No |
+| Price per 1,000 | **$3** | $5 | $4 (no emails) |
 
-Here are the **standout features** that make the **Social Media** Email Scraper a **top-tier tool** for **marketers**, **agencies**, and **researchers**:
+---
 
-- ⭐ Efficiently extract emails from Google Maps listings for lead generation
-- ⭐ Supports bulk data extraction to save time and effort
-- ⭐ Provides accurate and verified contact details for businesses on Google Maps
-- ⭐ Includes additional data such as phone numbers addresses and website URLs
-- ⭐ User-friendly interface designed for ease of use by professionals and beginners
-- ⭐ **Customizable** filters to target specific industries or geographic locations
-- ⭐ **Automated** scraping process for faster and more reliable data collection
-- ⭐ Offers export options to save extracted data in various formats like CSV or Excel
-- ⭐ Ensures compliance with legal and ethical guidelines during data extraction
-- ⭐ Compatible with multiple operating systems and devices for convenience
+## What data can you extract?
 
-## How to use **Social Media** Email Scraper 🚀
+| Field | Source | Description |
+| --- | --- | --- |
+| `name` | Google Maps | Business name |
+| `address` | Google Maps | Full street address |
+| `phone` | Google Maps | Phone number |
+| `website` | Google Maps | Business website URL |
+| `rating` | Google Maps | Google rating (0-5 stars) |
+| `reviews_count` | Google Maps | Number of Google reviews |
+| `category` | Google Maps | Business category (e.g. "Dentist", "Restaurant") |
+| `latitude`, `longitude` | Google Maps | GPS coordinates |
+| `google_maps_url` | Google Maps | Direct link to listing |
+| `primary_email` | Website crawl | Best contact email (info@, contact@, hello@) |
+| `emails` | Website crawl | All valid emails found (max 3, ranked) |
+| `email_source` | Website crawl | How found: mailto, schema.org, regex, contact_page |
+| `email_quality` | Computed | `high`, `medium`, `low`, or `none` |
+| `email_verified` | DNS check | `true` if domain has valid MX records (can receive mail) |
+| `has_whatsapp` | wa.me check | `true` if phone number has WhatsApp |
+| `socials` | Website crawl | Facebook, Instagram, LinkedIn, X, YouTube, TikTok |
+| `lead_score` | Computed | A/B/C/D/F quality grade |
+| `guessed_emails` | Generated | info@, contact@ candidates if nothing found |
 
-Follow this **simple, step-by-step guide** to start extracting **Social Media** emails today:
+---
 
-1. ✅ Download and install the Google Maps Email Extractor software on your device
-2. ✅ Open the tool and sign in with your credentials or create a new account
-3. ✅ Enter the desired location or industry keywords to target specific businesses
-4. ✅ **Configure** filters to refine your search based on category ratings or other criteria
-5. ✅ **Start** the scraping process by clicking the Extract button
-6. ✅ Monitor the progress of the extraction through the tools interface
-7. ✅ Once completed review the extracted data for accuracy and completeness
-8. ✅ **Export** the data to your preferred format such as CSV or Excel
-9. ✅ Use the extracted information for lead generation or outreach campaigns
-10. ✅ Repeat the process as needed to gather data from additional locations or industries
+## Quick start
 
-## Use Cases 🎯
-
-Lead Generation for Businesses
-🎯 Extract emails from Google Maps to build a targeted contact list
-🎯 **Use** the data for email marketing campaigns and outreach
-
-Market Analysis and Research
-🎯 **Analyze** business categories and locations using Google Maps data
-🎯 **Identify** potential partners or competitors in specific industries
-
-Sales Outreach
-🎯 **Find** verified emails for direct communication with businesses
-🎯 **Use** extracted data to schedule calls or meetings with prospects
-
-Data Enrichment
-🎯 Enhance existing databases with accurate contact information
-🎯 Integrate Google Maps data with CRM systems for better management
-
-Geographic Targeting
-🎯 Extract business emails from specific cities or regions
-🎯 Plan localized marketing strategies based on geographic data
-
-## Why choose us? 💎
-
-Google Maps Email Extractor stands out as a **reliable** and efficient tool for extracting business emails from Google Maps. It is designed to meet the needs of professionals across industries, offering high-quality data for lead generation and outreach.
-
-Our tool simplifies the process of gathering contact information, saving users valuable time and effort. With **advanced** features like customizable filters and bulk extraction, it caters to both small-scale and large-scale data collection requirements.
-
-The software ensures accuracy and compliance with legal guidelines, providing users with trustworthy data for their campaigns. Additionally, our **user-friendly** interface makes it accessible to individuals with varying levels of technical expertise.
-
-Whether you need to extract emails for marketing, sales, or research purposes, Google Maps Email Extractor is the ideal solution. By choosing us, you gain access to a powerful tool that supports your business goals and enhances your data-driven strategies.
-
-## **Social Media** Email Scraper Scalability 📈
-
-Google Maps Email Extractor is designed to handle data extraction tasks of varying scales, making it suitable for individual users and large enterprises. The tool supports bulk extraction, allowing users to gather thousands of email addresses in a single session.
-
-Its **customizable** filters enable targeted data collection, ensuring relevance and efficiency for diverse applications. Whether you need data from a specific location or industry, the software adapts to your requirements **seamless**ly.
-
-Our robust infrastructure ensures consistent performance even during high-demand operations. Additionally, the tool offers export options in multiple formats, facilitating integration with other systems or workflows.
-
-With Google Maps Email Extractor, you can scale your data collection efforts without compromising on accuracy or reliability.
-
-## **Social Media** Email Scraper Legal Guidelines ⚖️
-
-**Yes**—scraping **Social Media** is **legal** as long as you follow **ethical** and **compliant** practices. The **Social Media** Email Scraper extracts only **publicly available** information from **public** **Social Media** profiles, making it **safe** and **compliant** for **research**, **marketing**, and **analysis**.
-
-### Legal & Ethical Guidelines
-
-⚖️ **Ensure** compliance with local data protection laws when using Google Maps Email Extractor
-⚖️ **Do not** use extracted data for unsolicited or spam email campaigns
-⚖️ Respect the privacy of businesses and individuals listed on Google Maps
-⚖️ Verify the accuracy of extracted data before using it for professional purposes
-⚖️ **Avoid** extracting sensitive information that is not publicly available on Google Maps
-⚖️ **Use** the tool responsibly and ethically to maintain credibility and trust
-⚖️ Consult legal experts if unsure about the permissible use of extracted data
-⚖️ Follow Google Maps terms of service to avoid violations or penalties
-
-## Input Parameters 🧩
-
-📦 Example Input (JSON)
+### Basic search
 
 ```
 {
-  "keywords": ["Google Maps Email Extractor"],
-  "country": "Global",
-  "maxEmailNumbers": 20,
-  "platform": "Social Media",
-  "engine": "legacy"
+  "queries": ["plumber Paris", "dentist London"],
+  "maxResultsPerQuery": 20
 }
 ```
 
-## Input Table
-
-| Data Type | Description |
-| --- | --- |
-| keywords | Keywords to find relevant profiles |
-| country | Country setting (Global) |
-| maxEmailNumbers | Maximum emails to collect (default 20) |
-| platform | Platform to scrape (Social Media) |
-| engine | Engine type (legacy) |
-| proxyConfiguration | Optional proxy settings |
-
-## Output Format 📤
-
-📝 Example Output (JSON)
+### Full enrichment (emails + MX validation + WhatsApp)
 
 ```
-[
-  {
-    "network": "Social Media",
-    "keyword": "Google Maps Email Extractor",
-    "title": "Google's Single-Benefit Marketing Strategy for Chrome ...",
-    "description": "✓For years, once we created a Gmail account, we couldn't change the username (the part before @ gmail.com ). ... Grand Rapids Marketing Co. Read more",
-    "url": "https://www.linkedin.com/posts/phill-agnew_heres-how-google-marketed-chrome-browser-activity-7404878510214914048-dLxI",
-    "email": "before@gmail.com"
-  }
-]
+{
+  "queries": ["restaurant Berlin Mitte"],
+  "maxResultsPerQuery": 50,
+  "extractEmails": true,
+  "emailDepth": "deep",
+  "validateEmails": true,
+  "checkWhatsApp": true
+}
 ```
 
-## Output Table
+### Fast mode (no emails, just Google Maps data)
 
-| Data Type | Description |
-| --- | --- |
-| network | Identifies Social Media as the source |
-| keyword | Keyword that triggered the result (Google Maps Email Extractor) |
-| title | Profile title or username |
-| description | Public bio snippet with contact info |
-| url | Direct Social Media profile link |
-| email | Extracted email address |
+```
+{
+  "queries": ["gym New York"],
+  "maxResultsPerQuery": 100,
+  "extractEmails": false
+}
+```
 
-## FAQ ❓
+---
 
-### What is Google Maps Email Extractor?
+## Input
 
-Google Maps Email Extractor is a tool designed to extract email addresses and other contact information from Google Maps listings.
+| Parameter | Type | Default | Description |
+| --- | --- | --- | --- |
+| `queries` | array | *required* | Search queries (e.g. `["plumber Paris", "dentist London"]`) |
+| `maxResultsPerQuery` | integer | `20` | Max businesses per query (1-200) |
+| `extractEmails` | boolean | `true` | Crawl websites for emails |
+| `extractSocials` | boolean | `true` | Extract social media profiles |
+| `emailDepth` | string | `"deep"` | `shallow` = homepage only, `deep` = + contact pages |
+| `validateEmails` | boolean | `false` | MX record check — verify email domains can receive mail |
+| `checkWhatsApp` | boolean | `false` | Check if phone numbers have WhatsApp |
+| `language` | string | `"en"` | Google Maps language (ISO 639-1) |
+| `proxyConfig` | object | — | Proxy settings (residential recommended for production) |
 
-### How does Google Maps Email Extractor work?
+---
 
-The tool uses advanced algorithms to scrape data from Google Maps based on user-defined criteria like location or industry.
+## Output example
 
-### Is the **extract**ed data accurate?
+```
+{
+  "name": "Kottident - Dentist in Berlin Kreuzberg",
+  "address": "Adalbertstraße 94, 10999 Berlin, Germany",
+  "phone": "+49 30 3911155",
+  "website": "https://www.kottident.de/",
+  "rating": 4.8,
+  "reviews_count": 412,
+  "category": "Dentist",
+  "latitude": 52.5012,
+  "longitude": 13.4189,
+  "google_maps_url": "https://www.google.com/maps/place/Kottident/...",
+  "place_id": "0x47a84e37...",
+  "primary_email": "info@kottident.de",
+  "emails": ["info@kottident.de"],
+  "email_source": "mailto",
+  "email_quality": "high",
+  "email_verified": true,
+  "has_whatsapp": true,
+  "guessed_emails": [],
+  "socials": {
+    "instagram": "https://instagram.com/kottident",
+    "facebook": "https://facebook.com/kottident"
+  },
+  "lead_score": "A",
+  "query": "dentist Berlin"
+}
+```
 
-**Yes**, the tool ensures accuracy by extracting verified contact information directly from Google Maps.
+---
 
-### Can I **extract** data in bulk?
+## Lead scoring
 
-**Yes**, Google Maps Email Extractor supports bulk data extraction for efficient lead generation.
+| Score | Meaning | Criteria |
+| --- | --- | --- |
+| **A** | Gold lead | Email + phone + website |
+| **B** | Good lead | Email + website OR phone + website |
+| **C** | Basic lead | Website only |
+| **D** | Minimal | Phone only, no website |
+| **F** | No contact | Nothing found |
 
-### What formats can I **export** the data to?
+---
 
-You can export the extracted data to formats such as **CSV** or Excel for easy integration with other systems.
+## MX email validation
 
-### Is Google Maps Email Extractor user-friendly?
+When `validateEmails: true`, the actor checks each email domain's DNS MX records to verify it can receive mail. This filters out:
 
-**Yes**, the tool features a simple and intuitive interface suitable for users of all technical levels.
+- Defunct domains
+- Parked/expired domains
+- Typo domains
 
-### Does the tool comply with **legal** guidelines?
+Adds `email_verified: true/false` to each result. Runs in parallel — adds less than 1 second total.
 
-**Yes**, Google Maps Email Extractor is designed to ensure **compliance** with data protection laws and ethical standards.
+---
 
-### Can I target **specific** industries or locations?
+## WhatsApp check
 
-**Yes**, the tool allows users to configure filters for targeted data collection based on industry or geographic location.
+When `checkWhatsApp: true`, the actor checks each phone number against WhatsApp's wa.me service. Useful for:
 
-### Is there **customer support** available?
+- B2B outreach via WhatsApp Business
+- Identifying businesses that accept WhatsApp messages
+- Prioritizing leads by communication channel
 
-**Yes**, we offer dedicated customer support to assist users with any issues or inquiries.
+Adds `has_whatsapp: true/false` to each result. Runs in parallel — adds less than 1 second total.
+
+---
+
+## Email extraction techniques
+
+6 techniques applied in order of reliability:
+
+1. **mailto: links** — explicitly published contact emails
+2. **Schema.org / JSON-LD** — structured data from the page
+3. **Regex scan** — pattern matching, filtered against 30+ blacklisted domains
+4. **Obfuscation detection** — finds `contact [at] domain [dot] com` patterns
+5. **Contact page crawling** — visits /contact, /about, /impressum (deep mode)
+6. **Pattern guessing** — generates info@, contact@ as last resort
+
+---
+
+## Pricing
+
+**$0.003 per business** = $3 per 1,000 leads (emails + WhatsApp included).
+
+| Scenario | Leads | Cost | Time |
+| --- | --- | --- | --- |
+| Quick test | 5 | ~$0.02 | ~30s |
+| Small batch | 20 | ~$0.06 | ~2min |
+| Standard | 50 | ~$0.15 | ~4min |
+| Large batch | 200 | ~$0.60 | ~15min |
+
+MX validation and WhatsApp check add negligible cost (< 1s of compute).
+
+---
+
+## API integration
+
+**Python:**
+
+```
+from apify_client import ApifyClient
+
+client = ApifyClient("YOUR_APIFY_TOKEN")
+
+run = client.actor("dltik/google-maps-email-extractor").call(run_input={
+    "queries": ["plumber Paris", "electrician Lyon"],
+    "maxResultsPerQuery": 50,
+    "extractEmails": True,
+    "validateEmails": True,
+    "checkWhatsApp": True,
+})
+
+for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+    if item.get("lead_score") == "A" and item.get("has_whatsapp"):
+        print(f"{item['name']} — {item['primary_email']} — WhatsApp: {item['phone']}")
+```
+
+**curl:**
+
+```
+curl -X POST "https://api.apify.com/v2/acts/dltik~google-maps-email-extractor/runs" \
+  -H "Authorization: Bearer YOUR_APIFY_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "queries": ["dentist Berlin"],
+    "maxResultsPerQuery": 20,
+    "validateEmails": true,
+    "checkWhatsApp": true
+  }'
+```
+
+---
+
+## FAQ
+
+**Is scraping Google Maps legal?**
+
+This actor collects only publicly available business information. Always comply with local data protection regulations (GDPR, CCPA) and anti-spam laws.
+
+**Why do some businesses have no emails?**
+
+Not all businesses publish email addresses. Some use contact forms instead. The actor tries 6 techniques and provides `guessed_emails` as fallback.
+
+**What's the difference between shallow and deep?**
+`shallow` scans the homepage only. `deep` also visits /contact, /about, and /impressum pages — finds 30-50% more emails but takes longer.
+
+**Do I need proxies?**
+
+The actor works without proxies for small runs. For production (10+ queries), residential proxies are recommended to avoid Google rate limiting.
+
+**How accurate is the WhatsApp check?**
+
+It checks if the number is registered with WhatsApp via the wa.me redirect service. Accuracy is ~95% for international numbers.
+
+**How accurate is MX validation?**
+
+MX validation confirms the email domain can receive mail. It does not verify the specific mailbox exists — for that you'd need SMTP verification (not included).
+
+---
+
+## Connect with Make, Zapier & n8n
+
+This actor integrates with any automation platform via the Apify API.
+
+### Make (Integromat)
+
+1. Add an **Apify module** in your Make scenario
+2. Select **Run Actor** and choose this actor
+3. Configure the input (paste your JSON)
+4. Add a **Get Dataset Items** module to retrieve results
+5. Connect to Google Sheets, HubSpot, Slack, or any other app
+
+### Zapier
+
+1. Use the **Apify integration** on Zapier
+2. Set trigger: **Actor Run Finished**
+3. Action: **Get Dataset Items**
+4. Send results to your CRM, email tool, or spreadsheet
+
+### n8n
+
+1. Add an **HTTP Request** node to call the Apify API
+2. POST to `https://api.apify.com/v2/acts/dltik~google-maps-email-extractor/runs`
+3. Wait for completion, then fetch dataset items
+4. Route results to any n8n node
+
+### Webhooks
+
+Set up a webhook to get notified when a run finishes:
+
+```
+run = client.actor("dltik/google-maps-email-extractor").call(
+    run_input={...},
+    webhooks=[{
+        "eventTypes": ["ACTOR.RUN.SUCCEEDED"],
+        "requestUrl": "https://your-webhook-url.com"
+    }]
+)
+```
+
+---
+
+## Other scrapers by dltik
+
+| Actor | What it does | Price |
+| --- | --- | --- |
+| [Facebook Ads Scraper](https://apify.com/dltik/facebook-ads-scraper) | Scrape Meta Ad Library — ad copy, creatives, CTA links | $1/1K |
+| [TikTok Scraper](https://apify.com/dltik/tiktok-scraper) | Scrape profiles, videos, hashtags, search, trending | $1/1K |
+| [TikTok Video Downloader](https://apify.com/dltik/tiktok-video-downloader) | Download TikTok videos without watermark | $5/1K |
+| [Reddit Scraper](https://apify.com/dltik/reddit-scraper) | Scrape posts, comments, profiles with sentiment analysis | $2/1K |
+| [Trustpilot Scraper](https://apify.com/dltik/trustpilot-scraper) | Scrape reviews, ratings, company profiles with sentiment | $0.50/1K |
